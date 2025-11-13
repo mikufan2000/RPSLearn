@@ -41,7 +41,7 @@ valid_choice = validate(player_choice, available_choice)
 if valid_choice == False:
     while valid_choice == False:
         print("Oops! Try again!")
-        print("Please enter Rock, Paper,  or Scissors")
+        print("Please enter Rock, Paper, or Scissors")
         print("> ", end="")
         player_choice = ""
         player_choice = input()
@@ -49,7 +49,7 @@ if valid_choice == False:
 
 computer_choice = random.choice(available_choice)
 
-print("Miku choose:", computer_choice)
+print("Miku choice:", computer_choice)
 
 if checkiner(player_choice, computer_choice):
     print("You won hacker...")
