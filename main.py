@@ -26,8 +26,8 @@ def validate(player_choice, available_choice):
 available_choice = ["Rock", "Paper", "Scissors"]
 
 
-print("\t .:Rock Paper Scissors:.")
-print("enter your choice")
+print("\t .:Miku's Rock Paper Scissors:.")
+print("Enter choice:")
 print("> ", end="")
 
 player_choice = input()
@@ -40,8 +40,8 @@ valid_choice = validate(player_choice, available_choice)
 
 if valid_choice == False:
     while valid_choice == False:
-        print("invalid input asshole")
-        print("Please enter Rock Paper or Scissors")
+        print("Oops! Try again!")
+        print("Please enter Rock, Paper,  or Scissors")
         print("> ", end="")
         player_choice = ""
         player_choice = input()
@@ -58,4 +58,4 @@ elif checkiner(player_choice, computer_choice) == False:
     if isTie(player_choice, computer_choice):
         print("Its a tie!")
     else:
-        print("Miku win!! You lose :D")
+        print("Miku win!! You lose!! :D")
